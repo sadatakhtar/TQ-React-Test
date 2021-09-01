@@ -1,0 +1,18 @@
+.hide{
+    display: none;
+}
+
+.show{
+    display: flex;
+    flex-direction: column;
+    
+}
+.employee_title{
+    text-align: center;
+    margin-top: 10px;
+}
+.employee_list{
+    /* list-style: none; */
+    font-size: 12px;
+   
+}

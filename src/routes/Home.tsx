@@ -1,7 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 const Home: React.FC = () => {
+  const history = useHistory();
   return (
     <Container>
       <Row>
@@ -14,7 +16,7 @@ const Home: React.FC = () => {
 
           <hr />
 
-          <Button>View Companies</Button>
+          <Button onClick={() => history.push('/companies')}>View Companies</Button>
         </Col>
       </Row>
     </Container>
