@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import CompanyCard from './CompanyCard';
+
 import { Link } from 'react-router-dom';
+import CompanyCard from '../CompanyCard/CompanyCard';
 
 interface data {
   name: string;
@@ -30,7 +31,7 @@ function Cards() {
   return (
     <div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <h1>Companies Information</h1>
+        <h1 data-testid='header' className='h1'>Companies Information</h1>
         <Link to='/create'>
           <button
             data-testid='button'

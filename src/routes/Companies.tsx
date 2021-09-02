@@ -1,5 +1,6 @@
 import React from 'react'
-import Cards from '../views/Cards'
+import Cards from '../views/Cards/Cards'
+
 
 
 
